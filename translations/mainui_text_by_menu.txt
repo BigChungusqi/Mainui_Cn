@@ -1,0 +1,528 @@
+# mainui 界面文本提取清单
+# 来源：3rdparty/Mainui_Cn，与官方 dictgen.py 同源（结果一致）
+# L() 调用 451 次，去重后 354 条
+#
+#   GameUI_* / Valve_*    81 条  已由 gameui_schinese.txt / valve_schinese.txt 覆盖
+#   StringsList_* 编号    15 条  主菜单按钮提示等，需在 mainui_schinese.txt 里翻译
+#   英文文案             258 条  各设置菜单的静态文本
+
+==============================================================================
+
+### controls/BackgroundBitmap.cpp   (1 条)
+    139  WON background is not available
+
+### controls/PlayerModelView.cpp   (1 条)
+    146  No preview
+
+### controls/YesNoMessageBox.cpp   (4 条)
+     82  GameUI_OK
+     85  GameUI_Cancel
+    248  GameUI_OK
+    249  GameUI_Options
+
+### menus/AdvancedControls.cpp   (20 条)
+    149  Done
+    154  Crosshair
+    154  Enable the weapon aiming crosshair
+    158  GameUI_ReverseMouse
+    158  GameUI_ReverseMouseLabel
+    163  GameUI_MouseLook
+    163  GameUI_MouseLookLabel
+    169  Look spring
+    169  Causes the screen to 'spring' back to looking straight ahead when you move forward
+    173  Look strafe
+    173  In combination with your mouse look modifier, causes left-right movements to strafe instead of turn
+    177  GameUI_MouseFilter
+    177  GameUI_MouseFilterLabel
+    181  GameUI_AutoAim
+    181  GameUI_AutoaimLabel
+    185  GameUI_RawInput
+    185  GameUI_RawInputLabel
+    189  GameUI_MouseSensitivity
+    193  Input devices
+    193  Toggle mouse, touch controls
+
+### menus/Audio.cpp   (9 条)
+    120  GameUI_SoundEffectVolume
+    126  GameUI_MP3Volume
+    132  GameUI_HEVSuitVolume
+    138  Disable DSP effects
+    142  Use Alpha DSP effects
+    146  Mute when inactive
+    150  Enable vibration
+    157  Vibration
+    163  Done
+
+### menus/ColorPickerDialog.cpp   (9 条)
+    279  Vertical
+    279  Horizontal
+    340  GameUI_OK
+    352  GameUI_Cancel
+    388  Logo Color
+    393  Stripes:
+    393  Preset:
+    393  Direction:
+    421  No logo
+
+### menus/Configuration.cpp   (15 条)
+     52  Check the Internet for updates?
+     58  Controls
+     58  Change keyboard and mouse settings
+     60  GameUI_Audio
+     60  Change sound volume and quality
+     62  GameUI_Video
+     62  Change screen size, video mode and gamma
+     64  Touch
+     64  Change touch settings and buttons
+     66  GameUI_Joystick
+     66  Change gamepad axis and button settings
+     68  Update
+     68  Check for updates
+     70  Done
+     70  Go back to the Main menu
+
+### menus/ConnectionProgress.cpp   (14 条)
+     59  GameUI_PrecachingResources
+     73  Downloading %s \nfrom %s
+     84  GameUI_StartingServer
+     90  GameUI_EstablishingConnection
+    105  GameUI_StartingServer
+    109  GameUI_StartingServer
+    114  GameUI_EstablishingConnection
+    197  GameUI_Disconnected
+    223  GameUI_Console
+    236  GameUI_GameMenu_Disconnect
+    240  Really disconnect?
+    248  Skip
+    390  Changing level on server
+    401  GameUI_ParseServerInfo
+
+### menus/ConnectionWarning.cpp   (7 条)
+     46  Normal internet connection
+     51  DSL or PPTP with limited packet size
+     56  Slow connection mode (64kbps)
+     62  Done
+     69  Adv. Options
+     81  Connection problem
+     85  Too many lost packets while connecting!\nPlease select network settings
+
+### menus/Controls.cpp   (9 条)
+    235  GameUI_Action
+    236  GameUI_KeyButton
+    237  GameUI_Alternate
+    239  Press a key or button
+    242  GameUI_KeyboardSettingsText
+    247  GameUI_UseDefaults
+    248  Adv. Controls
+    249  GameUI_OK
+    250  GameUI_Cancel
+
+### menus/CreateGame.cpp   (12 条)
+    122  Invalid maxplayers value entered.\nPlease enter a value from 2 to %d.
+    181  GameUI_RandomMap
+    221  Use NAT Bypass instead of direct mode
+    227  Adv. Options
+    230  GameUI_OK
+    234  GameUI_Map
+    235  Title
+    238  GameUI_ServerName
+    249  GameUI_MaxPlayers
+    276  GameUI_Password
+    288  Starting a new game will exit any current game, OK to exit?
+    291  GameUI_Cancel
+
+### menus/CustomGame.cpp   (8 条)
+    247  GameUI_ForceGameRestart
+    252  Activate
+    253  Visit web site
+    254  Done
+    257  GameUI_Type
+    258  Name
+    259  Ver
+    260  Size
+
+### menus/FileDialog.cpp   (4 条)
+    132  Done
+    132  Use selected file
+    133  GameUI_Cancel
+    133  Cancel file selection
+
+### menus/GameOptions.cpp   (18 条)
+    111  FPS limit
+    111  Cap your game frame rate
+    120  Allow download
+    120  Allow download of files from servers
+    124  Enable developer console
+    124  Turns on console when engine was run without -console or -dev parameter
+    131  Command rate (cl_cmdrate)
+    131  How many commands sent to server per second
+    136  Update rate (cl_updaterate)
+    136  How many updates sent from server per second
+    141  Network speed (rate)
+    141  Limit traffic (bytes per second)
+    144  Select network mode:
+    150  Normal internet connection
+    158  DSL or PPTP with limited packet size
+    167  Slow connection mode (64kbps)
+    175  Done
+    176  GameUI_Cancel
+
+### menus/Gamepad.cpp   (23 条)
+    205  Builtin on-screen keyboard
+    205  Enable builtin on-screen keyboard in case your platform doesn't have any
+    210  Axis binding map
+    214  Set axis binding
+    219  Side
+    219  Side movement sensitivity
+    220  Invert
+    220  Invert side movement axis
+    223  Forward
+    223  Forward movement sensitivity
+    224  Invert
+    224  Invert forward movement axis
+    227  Look X
+    227  Horizontal look sensitivity
+    228  Invert
+    228  Invert pitch axis
+    231  Look Y
+    231  Vertical look sensitivity
+    232  Invert
+    232  Invert yaw axis
+    235  Controls
+    236  Gyroscope
+    237  Done
+
+### menus/Gyro.cpp   (26 条)
+     65  Enable Gamepad Gyroscope
+     65  Use gamepad motion sensors for aiming
+     78  Enable Built-in Gyroscope
+     78  Use device motion sensors for aiming
+    151  Sensitivity
+    154  Pitch
+    154  Vertical gyro sensitivity
+    155  Invert
+    155  Invert vertical gyro axis
+    158  Yaw
+    158  Horizontal gyro sensitivity
+    159  Invert
+    159  Invert horizontal gyro axis
+    162  Roll
+    162  Sideways tilt gyro sensitivity
+    163  Invert
+    163  Invert roll gyro axis
+    168  Deadzones
+    171  Pitch
+    171  Gyro pitch deadzone
+    174  Yaw
+    174  Gyro yaw deadzone
+    177  Roll
+    177  Gyro roll deadzone
+    180  Done
+    181  GameUI_Cancel
+
+### menus/InputDevices.cpp   (11 条)
+     81  Done
+     81  Save changed and go back to the Customize Menu
+     86  Ignore mouse
+     86  Need for some servers. Will disable mouse in menu too
+     94  If you do not have touchscreen, or joystick, you will not be able to play without mouse.\nAre you sure to disable mouse?
+    107  Enable touch
+    107  On-screen controls for touchscreen
+    111  GameUI_JoystickLabel
+    111  Enable using game controller in game
+    115  Evdev input (root)
+    115  Press this to enable full mouse and keyboard control on Android
+
+### menus/LoadGame.cpp   (13 条)
+    209  GameUI_SaveGame_Current
+    210  GameUI_SaveGame_NewSavedGame
+    211  GameUI_SaveGame_New
+    282  GameUI_QuickSave
+    284  GameUI_AutoSave
+    332  GameUI_Save
+    337  GameUI_Load
+    342  Delete
+    347  GameUI_Cancel
+    354  GameUI_Time
+    355  GameUI_Game
+    356  GameUI_ElapsedTime
+    362  Delete this saved game?
+
+### menus/Main.cpp   (28 条)
+     90  StringsList_235
+     92  GameUI_QuitConfirmationText
+    110  Really disconnect?
+    117  StringsList_234
+    177  GameUI_Console
+    177  Show console
+    187  GameUI_GameMenu_ResumeGame
+    187  StringsList_188
+    192  GameUI_GameMenu_Disconnect
+    192  Disconnect from server
+    197  GameUI_NewGame
+    197  StringsList_189
+    202  GameUI_TrainingRoom
+    202  StringsList_190
+    208  GameUI_Multiplayer
+    208  StringsList_198
+    213  GameUI_Options
+    213  StringsList_193
+    220  GameUI_ChangeGame
+    220  StringsList_530
+    225  Previews
+    225  StringsList_400
+    230  GameUI_GameMenu_Quit
+    230  GameUI_QuitConfirmationText
+    377  Save\\Load Game
+    377  StringsList_192
+    383  GameUI_LoadGame
+    383  StringsList_191
+
+### menus/Multiplayer.cpp   (12 条)
+     63  Internet game
+     63  View list of a game internet servers and join the one of your choice
+     64  Spectate game
+     64  Spectate internet games
+     65  LAN game
+     65  Set up the game on the local area network
+     66  GameUI_GameMenu_Customize
+     66  Choose your player name, and select visual options for your character
+     67  Controls
+     67  Change keyboard and mouse settings
+     68  Done
+     68  Go back to the Main menu
+
+### menus/NewGame.cpp   (11 条)
+    122  GameUI_Easy
+    122  StringsList_200
+    123  GameUI_Medium
+    123  StringsList_201
+    124  GameUI_Hard
+    124  StringsList_202
+    133  GameUI_Cancel
+    133  Go back to the Main menu
+    136  GameUI_PlayGame_Alt
+    136  Play the demo chapter on selected difficulty
+    141  StringsList_240
+
+### menus/PlayerIntroduceDialog.cpp   (2 条)
+     85  GameUI_PlayerName
+     93  Please, choose another player name
+
+### menus/PlayerSetup.cpp   (15 条)
+    133  No logo
+    509  GameUI_PlayerName
+    532  Colors
+    548  Please, choose another player name
+    553  Done
+    554  Game options
+    561  Adv. Options
+    565  Show 3D preview
+    571  GameUI_HighModels
+    576  GameUI_EnableVoice
+    581  GameUI_VoiceTransmitVolume
+    588  GameUI_VoiceReceiveVolume
+    595  * Uses Opus Codec.\nOpen, royalty-free, highly versatile audio codec.
+    610  GameUI_SpraypaintImage
+    618  Choose logo color
+
+### menus/SaveLoad.cpp   (7 条)
+     47  During play, you can quickly save your game by pressing %s.\nLoad this game again by pressing %s.
+     60  GameUI_LoadGame
+     60  GameUI_LoadGameHelp
+     61  GameUI_SaveGame
+     61  GameUI_SaveGameHelp
+     62  Done
+     62  Go back to the Main menu
+
+### menus/ServerBrowser.cpp   (35 条)
+    684  any map
+    811  Favorite
+    816  Unfavorite
+    826  any map
+   1052  Invalid address
+   1067  Invalid protocol
+   1079  Server already in favorites
+   1152  Join game
+   1155  GameUI_GameMenu_CreateServer
+   1165  View game info
+   1166  Favorite
+   1167  Refresh
+   1168  Add server
+   1170  Done
+   1172  Join a network game will exit any current game, OK to exit?
+   1173  GameUI_OK
+   1181  Name
+   1182  GameUI_Map
+   1183  Players
+   1184  Ping
+   1185  IP
+   1193  Direct
+   1195  Favorites
+   1196  History
+   1211  GameUI_Password
+   1233  GameUI_PasswordPrompt
+   1256  Enter server Internet address\n(e.g., 209.255.10.255:27015)
+   1269  ping
+   1286  empty
+   1287  not empty
+   1288  any
+   1305  full
+   1306  not full
+   1307  any
+   1324  any map
+
+### menus/ServerInfo.cpp   (9 条)
+    394  Server hostname:
+    405  Server IP address:
+    416  Server 'ping' time:
+    425  Done
+    434  Player Name
+    435  Kills
+    436  Time
+    440  Server Rule
+    441  Value
+
+### menus/Touch.cpp   (8 条)
+     47  Touch options
+     47  Touch sensitivity and profile options
+     50  Touch buttons
+     50  Add, remove, edit touch buttons
+     53  Gyroscope
+     53  Built-in device gyroscope options
+     56  Done
+     56  Go back to the previous menu
+
+### menus/TouchButtons.cpp   (44 条)
+    399  Delete selected button?
+    406  Reset all buttons?
+    430  Done
+    435  GameUI_Cancel
+    441  Red:
+    441  Texture red channel
+    445  Green:
+    445  Texture green channel
+    449  Blue:
+    449  Texture blue channel
+    453  Alpha:
+    453  Texture alpha channel
+    456  Hide
+    456  Show/hide button
+    461  Additive
+    461  Set button additive draw mode
+    466  MP
+    466  Show button only in multiplayer
+    469  SP
+    469  Show button only in singleplayer
+    472  Lock
+    472  Lock button editing
+    477  Look precision
+    477  Increase look precision
+    482  GameUI_Save
+    482  Save as new button
+    486  Editor
+    486  Open interactive editor
+    490  Select
+    490  Select texture from list
+    494  Pick
+    494  Pick command from key bindings list
+    500  New Button:
+    503  Command:
+    506  Texture:
+    511  Reset
+    511  Reset touch to default state
+    515  Delete
+    515  Delete selected button
+    629  Pick command
+    637  GameUI_Action
+    638  Command
+    640  GameUI_OK
+    648  GameUI_Cancel
+
+### menus/TouchOptions.cpp   (37 条)
+    102  Presets:
+    115  Profiles:
+    171  Reset sensitivity options?
+    178  Delete selected profile?
+    308  Done
+    312  Look X
+    312  Horizontal look sensitivity
+    316  Look Y
+    316  Vertical look sensitivity
+    320  Side
+    320  Side movement sensitivity
+    324  Forward
+    324  Forward movement sensitivity
+    328  Set grid size
+    332  Grid
+    332  Enable or disable grid
+    335  Enable touch
+    335  Enable or disable touch controls
+    338  Ignore mouse
+    338  Ignore mouse input
+    341  Enable acceleration
+    341  Nonlinear looking (touch_nonlinear_look)
+    344  Power factor
+    344  Power acceleration factor (touch_pow_factor)
+    348  Power multiplier
+    348  Pre-multiplier for pow (touch_pow_mult)
+    352  Exponent
+    352  Exponent factor, more aggressive (touch_exp_mult)
+    360  New Profile:
+    363  Reset
+    367  Delete
+    367  Delete saved game
+    371  Activate
+    371  Apply selected profile
+    375  GameUI_Save
+    375  Save new profile
+    379  GameUI_OK
+
+### menus/Video.cpp   (6 条)
+     47  Video options
+     47  Set video options such as screen size, gamma and image quality.
+     48  Video modes
+     48  Set video modes and configure 3D accelerators.
+     49  Done
+     49  Go back to the previous menu
+
+### menus/VideoModes.cpp   (10 条)
+    324  Keep this resolution? %i seconds remaining
+    344  Windowed
+    345  Fullscreen
+    346  Borderless
+    353  GameUI_Resolution
+    356  GameUI_VSync
+    366  GameUI_Renderer
+    374  Window mode
+    387  GameUI_Apply
+    388  GameUI_Cancel
+
+### menus/VideoOptions.cpp   (12 条)
+    175  Screen size
+    183  GameUI_Gamma
+    191  GameUI_Brightness
+    197  GameUI_OK
+    203  Detail textures
+    207  Use VBO
+    211  Water ripples
+    215  Overbrights
+    219  Texture filtering
+    223  Auto scale HUD
+    227  ^1WARNING: This is an experimental option and turning it on might break mods!^7\n\nReload the game or reconnect to the server to apply the settings.
+    328  Not supported on your GPU
+
+### menus/dynamic/ScriptMenu.cpp   (4 条)
+    320  Done
+    321  GameUI_Cancel
+    485  Server Options
+    492  GameUI_MultiplayerAdvanced
+
+### model/KbActListModel.h   (7 条)
+    172  Built-in touch actions
+    174  Look (touchpad)
+    175  Move (joystick)
+    176  Move (centered joystick)
+    177  Move (D-Pad)
+    178  Vertical wheel
+    179  Horizontal wheel
